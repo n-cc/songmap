@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ config.title }}</title>
+        <meta name="description" content="{{ config.title }}">
+        <meta name="author" content="{{ config.author }}">
+    <link rel="stylesheet" href="../css/styles.css?v=1.0">
+    </head>
+    <body>
+        <h1>
+            {{ song.name }} by {{ song.artist }}
+        </h1>
+        <p>
+            From {{ song.album }}, released in {{ song.date }}
+            <br />
+            <iframe width="560" height="315" src="{{ song.url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+    </body>
+</html>
